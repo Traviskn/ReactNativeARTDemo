@@ -3,15 +3,14 @@
  * for the original code.
  */
 import React, { Component } from 'react';
-import { Platform, TouchableWithoutFeedback, View } from 'react-native';
-import ReactArt from 'ReactNativeART';
+import { ART, Platform, TouchableWithoutFeedback, View } from 'react-native';
 
 const {
   Group,
   Shape,
   Surface,
   Transform
-} = ReactArt;
+} = ART;
 
 const PRESS_OUT_DRAG = 0.978;
 const PRESS_IN_DRAG = 0.9;
