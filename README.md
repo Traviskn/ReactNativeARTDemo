@@ -8,14 +8,9 @@ http://browniefed.com/blog/getting-react-art-running-on-react-native/
 And the react-art VectorWidget example:
 https://github.com/reactjs/react-art/tree/master/examples/vector-widget
 
-For iOS you will need to manually install the ART libraries.
+Clone this project, run `npm i`, and then use `react-native run-ios` or `react-native run-android` to see the demo.
 
-1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `react-native/Libraries/ART/` and add `ART.xcodeproj`
-3. In XCode, in the project navigator, select your project. Under the `Libraries` directory select the dropdown for `ART.xcodeproj`.  You should see a subfolder called `Products` that contains `libArt.a`. Add `libArt.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
-
-For Android you will not need to perform any manual steps.  However, there is an
-existing issue where performing fast animations or transformations with ART will
+There is existing issue where performing fast animations or transformations with ART will
 cause your Android app to crash.  You can track the progress of this issue here:
 https://github.com/facebook/react-native/issues/6760
 
